@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account - Handmade Jewelry</title>
+  <style>
+    /* Reset CSS */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header Styles */
+    .header {
+      background-color: #f90;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .nav {
+      margin-bottom: 10px;
+    }
+
+    .nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Account Page Styles */
+    .account-section {
+      padding: 50px 0;
+    }
+
+    .account-title {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .account-forms {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .form-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .form-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .form-card input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .form-card button {
+      padding: 10px 20px;
+      background-color: #f90;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-card button:hover {
+      background-color: #d58000;
+    }
+
+    /* Footer Styles */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Handmade Jewelry</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./Shop.html">Shop</a></li>
+          <li><a href="./About.html">About</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+          <li><a href="./Account.html">Account</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Account Section -->
+  <section class="account-section">
+    <div class="container">
+      <h2 class="account-title">Your Account</h2>
+      <div class="account-forms">
+        <!-- Login Form -->
+        <div class="form-card">
+          <h3>Login</h3>
+          <form action="#" method="post">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+          </form>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form-card">
+          <h3>Register</h3>
+          <form action="#" method="post">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Handmade Jewelry. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
